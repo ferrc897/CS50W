@@ -3,18 +3,79 @@
     <head>
         <title>Search</title>
         <style>
-            div {
-                text-align: center;
+            main {
+                display: flex;
+                align-items: center;
+                width: 1000px;
+                height: 500px;
+                text-align:center;
+                margin: auto;
+                flex-direction: column;
+                justify-content: center;
             }
+
+            #search_bar {
+                width: 500px;
+                border-color: lightgrey;
+                border-radius: 10px;
+                border-width: 2px;
+                border-style: solid;
+            }
+
+            #search {
+                display: flex;
+                align-items: center;
+                margin: auto;
+                width: 500px;
+                flex-wrap: wrap;
+                text-align: center;
+                flex-direction: column;
+            }
+
+            div {
+                margin: 10px;
+            }
+
+            section {
+                height: 50px;
+            }
+
+            a {
+                margin: 15px;
+                text-decoration: none;
+                color: grey;
+                font-family: arial;
+            }
+
+            .input {
+                color: grey;
+                border-style: none;
+                font-family: arial;
+            }
+
         </style>
     </head>
     <body>
-        <div>
-            <img alt="Google" src="google_logo.png">
-            <form action="https://google.com/search">
-                <input type="text" name="q">
-                <input type="submit" value="Google Search">
-            </form>
-        </div>
+        <section>
+                <div style="text-align: right;">
+                    <a href="images.html">Image Search</a>
+                    <a href="advance.html">Advance Search</a>
+                </div>
+                <hr>
+        </section>
+        <main>
+            <div>
+                <img alt="Google" src="static/google_logo.png">
+            </div>
+            <div>
+                <form id="search"action="https://google.com/search">
+                    <input id="search_bar" type="text" name="q">
+                    <div>
+                        <input class="input" type="submit" value="Google Search">
+                        <button class="input">I'm feeling lucky</button>
+                    </div>
+                </form>
+            </div>
+        </main>
     </body>
 </html>
