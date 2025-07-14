@@ -1,0 +1,49 @@
+ main {
+                display: flex;
+                align-items: center;
+                width: 1000px;
+                height: 500px;
+                text-align:center;
+                margin: auto;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            #search_bar {
+                width: 500px;
+                border-color: lightgrey;
+                border-radius: 10px;
+                border-width: 2px;
+                border-style: solid;
+            }
+
+            #search {
+                display: flex;
+                align-items: center;
+                margin: auto;
+                width: 500px;
+                flex-wrap: wrap;
+                text-align: center;
+                flex-direction: column;
+            }
+
+            div {
+                margin: 10px;
+            }
+
+            section {
+                height: 50px;
+            }
+
+            a {
+                margin: 15px;
+                text-decoration: none;
+                color: grey;
+                font-family: arial;
+            }
+
+            .input {
+                color: grey;
+                border-style: none;
+                font-family: arial;
+            }

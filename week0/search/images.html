@@ -1,27 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html>
     <head>
-        <title>Search</title>
+        <title>Search images</title>
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
         <section>
-                <div style="text-align: right;">
-                    <a href="images.html">Image Search</a>
-                    <a href="advance.html">Advance Search</a>
-                </div>
-                <hr>
+            <div style="text-align: right;">
+                <a href="index.html">Google search</a>
+            </div>
+            <hr>
         </section>
         <main>
-            <div>
+            <div style="margin-bottom: 0px">
                 <img alt="Google" src="static/google_logo.png">
+                <h1 style="text-align: right; font-family: arial; color: blue;">Images</h1>
             </div>
             <div>
-                <form id="search"action="https://google.com/search">
+                <form id="search" action="https://google.com/search">
                     <input id="search_bar" type="text" name="q" placeholder="🔍">
+                    <input type="hidden" name="tbm" value="isch">
                     <div>
                         <input class="input" type="submit" value="Google Search">
-                        <button class="input">I'm feeling lucky</button>
                     </div>
                 </form>
             </div>
